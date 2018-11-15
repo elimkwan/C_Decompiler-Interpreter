@@ -1,10 +1,12 @@
 # C_Decompiler-Interpreter
 
-#Author: Elim Kwan
-#Date written: 09/03/2017
-#Description: The program shows the version, instruction mnemonic corresponding to different opcode and machine codes of a text file.It can also shows the hexadecimal representation of a text file and decompile a machine code file to assembly code.
+Author: Elim Kwan
 
-#Instructions for compiling the program: type ‘make’ in the directory
+Date written: 09/03/2017
+
+Description: The program shows the version, instruction mnemonic corresponding to different opcode and machine codes of a text file.It can also shows the hexadecimal representation of a text file and decompile a machine code file to assembly code.
+
+Instructions for compiling the program: type ‘make’ in the directory
 
 Expected Output:
 $./asmdump 
