@@ -4,7 +4,7 @@ Author: Elim Kwan
 
 Date written: 09/03/2017
 
-Description: The program take a compiled file that is supposed to run in the ZX256 and decompile it into a ZX256 assembly representation. It decompile machine code back into assembly. 
+Description: The program takes a compiled file that is supposed to run in the ZX256 and decompile it into a ZX256 assembly representation. It decompile machine code back into assembly. 
 
 Instructions for compiling the program: type ‘make’ in the directory
 
