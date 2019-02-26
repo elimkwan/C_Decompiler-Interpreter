@@ -4,7 +4,7 @@ Author: Elim Kwan
 
 Date written: 09/03/2017
 
-Description: The program shows the version, instruction mnemonic corresponding to different opcode and machine codes of a text file.It can also shows the hexadecimal representation of a text file and decompile a machine code file to assembly code.
+Description: The program take a compiled file that is supposed to run in the ZX256 and decompile it into a ZX256 assembly representation. It decompile machine code back into assembly. 
 
 Instructions for compiling the program: type ‘make’ in the directory
 
