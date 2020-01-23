@@ -10,23 +10,33 @@ Instructions for compiling the program: type ‘make’ in the directory
 
 Expected Output:
 $./asmdump 
+```console
 Usage:
 ./asmdump.exe —-version
 ./asmdump.exe —-opcode OPCODE
 ./asmdump.exe —-hexdump [FILE]
 ./asmdump.exe FILE
+```
 
 $./asmdump —-version
+```console
 3.0
+```
 
 $./asmdump —-opcode 0X01
+```console
 mov
+```
 
 $./asmdump.exe —-opcode 0x02
+```console
 No such instruction “0x02”
+```
 
 $./asmdump —-opcode 0xasd
+```console
 Invalid opcode string “0xasd”
+```
 
 $./asmdump.exe —-hexdump Makefile
 ```console
@@ -53,9 +63,12 @@ $./asmdump.exe —-hexdump Makefile
 ```
 
 $./asmdump.exe —-hexdump invalid_file.txt
+```console
 No such file “invalid_file.txt”
+```
 
 $./asmdump.exe —-hexdump < tests/hello.c
+```console
 00000000  2f 2a 20 68 65 6c 6c 6f  |/* hello|
 00000008  2e 63 20 2a 2f 0a 0a 23  |.c */..#|
 00000010  69 6e 63 6c 75 64 65 20  |include |
@@ -71,8 +84,10 @@ $./asmdump.exe —-hexdump < tests/hello.c
 00000060  20 20 72 65 74 75 72 6e  |  return|
 00000068  20 30 3b 0a 7d 0a        | 0;.}.|
 0000006e
+```
 
 $ls | ./asmdump.exe —-hexdump
+```console
 00000000  43 6f 6e 76 65 72 74 4f  |ConvertO|
 00000008  70 63 6f 64 65 48 65 78  |pcodeHex|
 00000010  66 69 6c 65 2e 63 0a 43  |file.c.C|
@@ -93,8 +108,10 @@ $ls | ./asmdump.exe —-hexdump
 00000088  6c 65 72 2e 68 0a 74 65  |ler.h.te|
 00000090  73 74 73 0a              |sts.|
 00000094
+```
 
 $./asmdump.exe tests/hello.out
+```console
          db "Hello world!\n"
 main:    mov %a,0x04
          mov %b,0x01
@@ -103,8 +120,11 @@ main:    mov %a,0x04
          syscall
          mov %a,0x01
          syscall
+```
 
 $./asmdump.exe tests/hello_bad.out
+```console
          db "Hello world!"
 Invalid opcode 0xc0 at pos 0x0e
+```
 
