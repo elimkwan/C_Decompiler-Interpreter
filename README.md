@@ -29,6 +29,7 @@ $./asmdump —-opcode 0xasd
 Invalid opcode string “0xasd”
 
 $./asmdump.exe —-hexdump Makefile
+```console
 00000000  61  6c  6c  3a  20  61  73  6d  |all: asm|
 00000008  64  75  6d  70  2e  65  78  65  |dump.exe|
 00000010  0a  0a  61  73  6d  64  75  6d  |..asmdum|
@@ -49,6 +50,7 @@ $./asmdump.exe —-hexdump Makefile
 00000088  73  2d  33  2e  30  2e  70  79  |s-3.0.py|
 00000090  20  2e  2f  61  73  6d  64  75  | ./asmdu|
 00000098  6d  70  2e  65  78  65          |...P..|
+```
 
 $./asmdump.exe —-hexdump invalid_file.txt
 No such file “invalid_file.txt”
