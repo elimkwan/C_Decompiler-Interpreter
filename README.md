@@ -8,6 +8,7 @@ Description: The program takes a compiled file that is supposed to run in the ZX
 
 Instructions for compiling the program: type ‘make’ in the directory
 
+---
 Expected Output:
 $./asmdump 
 Usage:
@@ -105,3 +106,5 @@ main:    mov %a,0x04
 $./asmdump.exe tests/hello_bad.out
          db "Hello world!"
 Invalid opcode 0xc0 at pos 0x0e
+
+---
